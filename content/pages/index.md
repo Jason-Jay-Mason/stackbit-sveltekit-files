@@ -4,25 +4,28 @@ title: Hello blob meh
 blocks:
   - type: Hero
     heading: SVELTE
-    body: Cybernetically enhanced web apps
+    body: |
+      cybernetically enhanced
+
+      stackbit starter
     buttonPrimary:
       type: button
-      label: tutorial
-      url: /
+      label: sveltekit
+      url: 'https://svelte.dev'
       theme: ''
     buttonSecondary:
       type: button
-      label: read the docs
-      url: /
+      label: stackbit
+      url: 'https://www.stackbit.com/'
       theme: Subtle
   - type: Featured
     columns:
       - type: text
-        headline: compiled
+        headline: git backed
         body: >-
-          Svelte shifts as much work as possible out of the browser and into
-          your build step. No more manual optimisations — just faster, more
-          efficient apps.
+          In the dynamic world of content management, a Git-Backed CMS gives you
+          full content ownership, liberating you from platform restrictions for
+          total control.
       - type: text
         headline: compact
         body: >-

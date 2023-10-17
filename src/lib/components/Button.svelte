@@ -2,11 +2,14 @@
 	import type { Button, ButtonTheme } from '$lib/stackbit/models'
 
 	export let data: Button
-	const defaultStyles = 'p-2' + ' '
+	export let id: string
+	const defaultStyles =
+		'pt-1 pb-2 px-4 font-medium text-white rounded-md mr-2 drop-shadow hover:drop-shadow-xl transition-all' +
+		' '
 	const themes: Record<ButtonTheme, string> = {
-		Subtle: defaultStyles + 'bg-[#606060] rounded-md text-white'
+		Subtle: defaultStyles + 'bg-[#606060]'
 	}
-	const styles = themes[data.theme] || defaultStyles + 'default'
+	const styles = themes[data.theme] || defaultStyles + 'bg-[#c30]'
 </script>
 
-<a href={data.url} data-sb-field-path=".buttonSecondary.label" class={styles}>{data.label}</a>
+<a href={data.url} data-sb-field-path={`${id}.label`} class={styles}>{data.label}</a>

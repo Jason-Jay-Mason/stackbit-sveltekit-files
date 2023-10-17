@@ -6,20 +6,37 @@
 	export let id: string
 </script>
 
-<section data-sb-field-path={id} class="bg">
-	<h1 data-sb-field-path=".heading">
-		{data.heading}
-	</h1>
-	{#if data.buttonPrimary}
-		<Button data={data.buttonPrimary} />
-	{/if}
-	{#if data.buttonSecondary}
-		<Button data={data.buttonSecondary} />
-	{/if}
+<section data-sb-field-path={id} class="bg relative flex flex-row">
+	<div class="w-full px-10 max-w-6xl m-auto z-1">
+		<div class="flex-col">
+			<h1
+				data-sb-field-path=".heading"
+				class="tracking-[0.8rem] text-8xl font-semibold text-[#ccc]"
+			>
+				{data.heading}
+			</h1>
+			<h2 data-sb-field-path=".body" class="font-normal text-3xl py-2 text-[#ccc] max-w-xs">
+				{data.body}
+			</h2>
+			<div class="flex flex-row pt-3">
+				{#if data.buttonPrimary}
+					<Button data={data.buttonPrimary} id=".buttonPrimary" />
+				{/if}
+				{#if data.buttonSecondary}
+					<Button data={data.buttonSecondary} id=".buttonSecondary" />
+				{/if}
+			</div>
+		</div>
+	</div>
+	<img
+		src="/svelte-machine-desktop.png"
+		class=" w-[140vw] left-[-20vw] z-0 top-25 lg:top-40 lg:left-auto lg:w-[100vw] h-auto absolute"
+	/>
 </section>
 
 <style>
 	.bg {
+		height: calc(10rem + 20vw);
 		background: radial-gradient(
 				64.14% 72.25% at 47.58% 31.75%,
 				rgba(113, 120, 127, 0.52) 0%,
