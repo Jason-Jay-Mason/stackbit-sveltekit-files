@@ -7,7 +7,7 @@
 </script>
 
 <section data-sb-field-path={id} class="bg relative flex flex-row">
-	<div class="w-full px-10 max-w-6xl m-auto z-1">
+	<div class="px-10 w-full max-w-6xl m-auto z-1">
 		<div class="flex-col">
 			<h1
 				data-sb-field-path=".heading"
@@ -30,6 +30,7 @@
 	</div>
 	<img
 		src="/svelte-machine-desktop.png"
+    alt="Svelte Icon"
 		class=" w-[140vw] left-[-20vw] z-0 top-25 lg:top-40 lg:left-auto lg:w-[100vw] h-auto absolute"
 	/>
 </section>

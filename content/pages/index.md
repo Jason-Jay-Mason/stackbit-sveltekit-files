@@ -1,13 +1,13 @@
 ---
 type: page
-title: Hello blob meh
+title: Svelte Stackbit Files
 blocks:
   - type: Hero
     heading: SVELTE
     body: |
       cybernetically enhanced
 
-      stackbit starter
+      stackbit example
     buttonPrimary:
       type: button
       label: sveltekit
